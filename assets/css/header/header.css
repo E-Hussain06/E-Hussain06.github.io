@@ -1,39 +1,31 @@
-header .container-fluid
-{
-    /* background-image: url('https://unsplash.it/2560/1707?image=961'); */
+header .container-fluid {
     background-image: url('../../img/jumbotron1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
     padding-top: 36px;
 }
-.hamburger
-{
+.hamburger {
     font-size: 2.3em;
     color: #FFFFFF;
 }
-.hamburger:hover
-{
+.hamburger:hover {
   color: #555;
   cursor: pointer;
 }
-.logo
-{
+.logo {
     background: none;
     border: 0px;
 }
-.jumbotron
-{
+.jumbotron {
     background: none;
     text-align: center;
 }
 .jumbotron h1,.jumbotron h2, .jumbotron h3,.jumbotron h4,
-.jumbotron h5,.jumbotron h6,.jumbotron small
-{
+.jumbotron h5,.jumbotron h6,.jumbotron small {
     color: #FFFFFF;
 }
-.jumbotron p
-{
+.jumbotron p {
     color: #FFFFFF;
     margin-bottom: 5%;
 }
