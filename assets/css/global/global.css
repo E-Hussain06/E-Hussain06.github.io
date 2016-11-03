@@ -2,6 +2,9 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto Slab', serif;
     margin-bottom: 1.1em;
 }
+a {
+    text-decoration:none;
+}
 .features, .blog, .gallery,
 .clients,.prefooter .container-fluid {
     padding-top: 3.3em;
@@ -10,4 +13,4 @@ h1, h2, h3, h4, h5, h6 {
 span.typcn::before, i.typcn::before {font-size: 2em;}
 span.x2:before, i.x2:before {font-size: 3.4em;}
 span.x3:before, i.x3:before {font-size: 4.4em;}
-span.x4:before, i.x4:before {font-size: 6em;} 
+span.x4:before, i.x4:before {font-size: 6em;}
