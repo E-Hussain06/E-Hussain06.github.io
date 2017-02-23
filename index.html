@@ -1,112 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang='en'>
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Ehsan Hussain | Website Portfolio</title>
-        <link href="assets/css/style.css" rel="stylesheet">
+        <meta charset='UTF-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link href='./assets/css/style.css' rel='stylesheet' type='text/css'>
+        <title>Ehsan Hussain</title>
     </head>
-
     <body>
-        <div class="container">
+        <div class='body__container'>
+
             <header>
-                <div>
-                    <span></span>
-                    <h2>Ehsan Hussain</h2>
-                    <h2>JavaScript Developer</h2>
+                <div class='masthead-container'>
+                    <h1 id='masthead__title'>Ehsan Hussain</h1>
                 </div>
                 <nav>
-                    <ul class="menu-nav__menu">
-                        <li class="menu-nav__list-item">
-                            <a href="#">Home</a>
+                    <ul class='nav__menu'>
+                        <li class='nav__list-item'>
+                            <a href='#'>Home</a>
                         </li>
-                        <li class="menu-nav__list-item">
-                            <a href="#">About</a>
+                        <li class='nav__list-item'>
+                            <a href='#profile'>Profile</a>
                         </li>
-                        <li class="menu-nav__list-item">
-                            <a href="#">Portfolio</a>
+                        <li class='nav__list-item'>
+                            <a href='#about'>About</a>
                         </li>
-                        <li class="menu-nav__list-item">
-                            <a href="#">Blog</a>
+                        <li class='nav__list-item'>
+                            <a href='#portfolio'>Portfolio</a>
                         </li>
-                        <li class="menu-nav__list-item">
-                            <a href="#">Contact</a>
+                        <li class='nav__list-item'>
+                            <a href='#blog'>Blog</a>
+                        </li>
+                        <li class='nav__list-item'>
+                            <a href='#contact'>Contact</a>
                         </li>
                     </ul>
                 </nav>
             </header>
 
-            <main>
-                <div class="profile__container">
-                    <h1 id="profile__title">Front-end Development</h1>
-                    <ul class="profile-nav__menu">
-                        <li class="profile-nav__list-item">HTML5</li>
-                        <li class="profile-nav__list-item">CSS3</li>
-                        <li class="profile-nav__list-item">JavaScript</li>
-                        <li class="profile-nav__list-item">Angular JS</li>
-                        <li class="profile-nav__list-item">Node JS</li>
+            <section class='profile'>
+                <a id='profile-anchor'></a>
+                <div class='profile__content-container'>
+                    <h1 class='profile__title'>Front-end Development</h1>
+                    <ul class='profile__list'>
+                        <li class='profile__list-item'>HTML5</li>
+                        <li class='profile__list-item'>CSS3</li>
+                        <li class='profile__list-item'>JavaScript</li>
+                        <li class='profile__list-item'>Angular JS</li>
+                        <li class='profile__list-item'>Node JS</li>
                     </ul>
                     <div>
-                        <a href="#" id="profile__button-text">
+                        <a href='#portfolio' id='profile__button-text'>
                             View Portfolio
-                        <i id="profile__button-form"></i>
+                            <i id='profile__button-glyph'></i>
                         </a>
                     </div>
                 </div>
+            </section>
 
-                <section class="about">
-                    <div>
-                        <h2>About</h2>
-                        <p>
-                            I'm Ehsan Hussain, a JavaScript developer based in Luton. I like building websites using JavaScript libraries and languages.
-                            On the side, I like playing retro-games, and playing music on my guitar and drums.
-                        </p>
-                    </div>
-                </section>
-
-                <section>
-                    <h2>Current Status</h2>
-                    <p>
+            <main class='about'>
+                <a id='about'></a>
+                <div class='about__content-container-col-1'>
+                    <h2 class='about__content-title'>About</h2>
+                    <p class='about__content-text'>
+                        I'm Ehsan Hussain, a JavaScript developer based in Luton. I like building websites using JavaScript libraries and languages.
+                        On the side, I like playing retro-games, and playing music on my guitar and drums.
+                    </p>
+                </div>
+                <div class='about__content-container-col-2'>
+                    <h2 class='about__title'>Current Status</h2>
+                    <p class='about__content-text'>
                         As of 25th Nov 2016, I left a Network role to persue developing websites. Here's what I've been getting upto in the meantime:
                     </p>
-                    <ul>
-                        <li>
+                    <ul class='about__list'>
+                        <li class='about_list-item'>
                             Looking for any available work - contract or permanent.
                         </li>
-                        <li>
+                        <li class='about_list-item'>
                             Honing my skills in front-end and back-end languages.
                         </li>
-                        <li>
+                        <li class='about_list-item'>
                             Building new understanding of new coding practices and concepts.
                         </li>
-                        <li>
+                        <li class='about_list-item'>
                             Maintaining my edge in music - working on rudiments and developing harmonic riffs.
                         </li>
-                        <li>
+                        <li class='about_list-item'>
                             Defending Gotham from the forces of evil.
                         </li>
                     </ul>
-                </section>
+                </div>
             </main>
+
+            <section class='portfolio'>
+                <a id='portfolio'></a>
+                <h2 id='portfolio__title'>Portfolio</h2>
+                <p id='portfolio__content-text'>Below is a show-case of what I've worked on:</p>
+
+                <div class='portfolio__carousel-wrapper'>
+                    <div class='portfolio__carousel-inner'>
+                        <input class='portfolio__carousel-open' id='portfolio__carousel-1' type='radio' name='portfolio__carousel' hidden='' checked='checked'>
+                        <div class='portfolio__carousel-item'></div>
+                        <input class='portfolio__carousel-open' id='portfolio__carousel-2' type='radio' name='portfolio__carousel' hidden='' checked='checked'>
+                        <div class='portfolio__carousel-item'></div>
+                        <input class='portfolio__carousel-open' id='portfolio__carousel-3' type='radio' name='portfolio__carousel' hidden='' checked='checked'>
+                        <div class='portfolio__carousel-item'></div>
+
+                        <label for='portfolio__carousel-3' class='portfolio__carousel-controller prev portfolio__carousel-controller-1'>&lt;</label>
+                        <label for='portfolio__carousel-2' class='portfolio__carousel-controller next portfolio__carousel-controller-1'>&gt;</label>
+                        <label for='portfolio__carousel-1' class='portfolio__carousel-controller prev portfolio__carousel-controller-2'>&lt;</label>
+                        <label for='portfolio__carousel-3' class='portfolio__carousel-controller next portfolio__carousel-controller-2'>&gt;</label>
+                        <label for='portfolio__carousel-2' class='portfolio__carousel-controller prev portfolio__carousel-controller-3'>&lt;</label>
+                        <label for='portfolio__carousel-1' class='portfolio__carousel-controller next portfolio__carousel-controller-3'>&gt;</label>
+
+                        <ol class='portfolio__carousel-indicators'>
+                            <li><label for='portfolio__carousel-1' class='portfolio__carousel-indicators-bullet'>&bull;</label></li>
+                            <li><label for='portfolio__carousel-2' class='portfolio__carousel-indicators-bullet'>&bull;</label></li>
+                            <li><label for='portfolio__carousel-3' class='portfolio__carousel-indicators-bullet'>&bull;</label></li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+
+            <section class='blog'>
+                <a id='blog'></a>
+                <h2 class='blog__title'>Blog</h2>
+                <h3 class='blog__subtitle'>Articles</h3>
+                <p class='blog__content'>Coming soon, watch this space!</p>
+            </section>
+
+            <section class='contact'>
+                <a id='contact'></a>
+                <h2 class='contact__title'>Contact</h2>
+                <p>
+                    You can find me on <span id='contact__span-twitter'><a href='https://twitter.com/EhsanH06'>Twitter</a></span>,
+                    <span id='contact__span-linked'><a href='https://uk.linkedin.com/in/ehsan-hussain-7926bb121'>LinkedIn</a></span>, 
+                    and <span id='contact__span-github'><a href='https://github.com/ehsanh06'>GitHub</a></span>!
+                </p>
+            </section>
+
             <footer>
-                <ul>
-                    <li>
+                <ul class='footer-nav__menu'>
+                    <li class='footer-nav__list-item'>
                         &copy;2016 Ehsan Hussain
                     </li>
-                    <li>
-                        <a href="https://twitter.com/EhsanH06">Twitter</a>
+                    <li class='footer-nav__list-item'>
+                        <a href='https://twitter.com/EhsanH06'>Twitter</a>
                     </li>
-                    <li>
-                        <a href="https://uk.linkedin.com/in/ehsan-hussain-7926bb121">LinkedIn</a>
+                    <li class='footer-nav__list-item'>
+                        <a href='https://uk.linkedin.com/in/ehsan-hussain-7926bb121'>LinkedIn</a>
                     </li>
-                    <li>
-                        <a href="https://github.com/ehsanh06">GitHub</a>
+                    <li class='footer-nav__list-item'>
+                        <a href='https://github.com/ehsanh06'>GitHub</a>
                     </li>
                 </ul>
             </footer>
         </div>
     </body>
-
+    <script src='assets/js/index.js'></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 </html>
