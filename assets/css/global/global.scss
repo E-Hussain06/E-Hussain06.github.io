@@ -1,0 +1,42 @@
+/* Variables 
+============*/
+
+$font-stack: Helvetica, sans-serif;
+$white: #FFF;
+$black: #222;
+
+/* Resets and overrides
+=========== */
+* {
+    padding:0;
+    margin:0;
+}
+body {
+    font-family: $font-stack;
+    font-size:100%;
+    background-color: $black;
+    .body__container {           /* Container-Div */
+        width: 800px;
+        margin:0 auto;
+    }
+}
+img, fieldset { border:0; }
+a,
+button,
+input[type=button],
+input[type=image],
+input[type=reset],
+input[type=submit],
+label { cursor:pointer; }
+
+a {
+    text-decoration:none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+h1, h2, h3, h4, h5, h6, p, ol, ul, li, a { color:$white; }
+
+ol, ul, li { list-style:none;}
+
+// div { border: 1px dashed red; }
