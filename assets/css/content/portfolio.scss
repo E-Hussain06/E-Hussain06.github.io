@@ -1,0 +1,107 @@
+@import '../global/global.scss';
+
+.portfolio {
+    padding: 2em 0 4em 0;
+    background-color:chocolate;
+
+    #portfolio__title {
+        margin-left:6em;
+        font-weight:100;
+    }
+    #portfolio__content-text {
+        margin: 1em 9em;
+    }
+}
+
+.portfolio__carousel {
+	position: relative;
+	box-shadow: 0 1px 6px $black_64;
+	margin-top: 26px;
+}
+.portfolio__carousel-inner {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+}
+.portfolio__carousel-item {
+	position: absolute;
+	opacity: 0;
+	transition: opacity 0.6s ease-out;
+	img {
+		display: block;
+		height: auto;
+		max-width: 100%;
+	}
+}
+.portfolio__carousel-control {
+	background: $black_28;
+	border-radius: 50%;
+	color: $white;
+	cursor: pointer;
+	display: none;
+	font-size: 40px;
+	height: 40px;
+	line-height: 35px;
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	text-align: center;
+	width: 40px;
+	z-index: 10;
+	&.prev {
+		left: 2%;
+	}
+	&.next {
+		right: 2%;
+	}
+	&:hover {
+		background: $black_80;
+		color: $color_silver_chalice_approx;
+	}
+}
+.portfolio__carousel-indicators {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	bottom: 2%;
+	left: 0;
+	right: 0;
+	text-align: center;
+	z-index: 10;
+	li {
+		display: inline-block;
+		margin: 0 5px;
+	}
+}
+.carousel-bullet {
+	color: $white;
+	cursor: pointer;
+	display: block;
+	font-size: 35px;
+	&:hover {
+		color: $color_silver_chalice_approx;
+	}
+}
+.portfolio__carousel-open:checked + .portfolio__carousel-item {
+	position: static;
+	opacity: 100;
+}
+#carousel-1:checked ~ .control-1 {
+	display: block;
+	~ .portfolio__carousel-indicators li:nth-child(1) .carousel-bullet {
+		color: $color_boston_blue_approx;
+	}
+}
+#carousel-2:checked ~ .control-2 {
+	display: block;
+	~ .portfolio__carousel-indicators li:nth-child(2) .carousel-bullet {
+		color: $color_boston_blue_approx;
+	}
+}
+#carousel-3:checked ~ .control-3 {
+	display: block;
+	~ .portfolio__carousel-indicators li:nth-child(3) .carousel-bullet {
+		color: $color_boston_blue_approx;
+	}
+}
