@@ -72,19 +72,19 @@
                         As of 25th Nov 2016, I left a Network role to persue developing websites. Here's what I've been getting upto in the meantime:
                     </p>
                     <ul class='about__list'>
-                        <li class='about_list-item'>
+                        <li class='about__list-item'>
                             Looking for any available work - contract or permanent.
                         </li>
-                        <li class='about_list-item'>
+                        <li class='about__list-item'>
                             Honing my skills in front-end and back-end languages.
                         </li>
-                        <li class='about_list-item'>
+                        <li class='about__list-item'>
                             Building new understanding of new coding practices and concepts.
                         </li>
-                        <li class='about_list-item'>
+                        <li class='about__list-item'>
                             Maintaining my edge in music - working on rudiments and developing harmonic riffs.
                         </li>
-                        <li class='about_list-item'>
+                        <li class='about__list-item'>
                             Defending Gotham from the forces of evil.
                         </li>
                     </ul>
@@ -96,30 +96,40 @@
                 <h2 id='portfolio__title'>Portfolio</h2>
                 <p id='portfolio__content-text'>Below is a show-case of what I've worked on:</p>
 
-                <div class='portfolio__carousel-wrapper'>
+                <div class='portfolio__carousel'>
                     <div class='portfolio__carousel-inner'>
-                        <input class='portfolio__carousel-open' id='portfolio__carousel-1' type='radio' name='portfolio__carousel' hidden='' checked='checked'>
-                        <div class='portfolio__carousel-item'></div>
-                        <input class='portfolio__carousel-open' id='portfolio__carousel-2' type='radio' name='portfolio__carousel' hidden='' checked='checked'>
-                        <div class='portfolio__carousel-item'></div>
-                        <input class='portfolio__carousel-open' id='portfolio__carousel-3' type='radio' name='portfolio__carousel' hidden='' checked='checked'>
-                        <div class='portfolio__carousel-item'></div>
-
-                        <label for='portfolio__carousel-3' class='portfolio__carousel-controller prev portfolio__carousel-controller-1'>&lt;</label>
-                        <label for='portfolio__carousel-2' class='portfolio__carousel-controller next portfolio__carousel-controller-1'>&gt;</label>
-                        <label for='portfolio__carousel-1' class='portfolio__carousel-controller prev portfolio__carousel-controller-2'>&lt;</label>
-                        <label for='portfolio__carousel-3' class='portfolio__carousel-controller next portfolio__carousel-controller-2'>&gt;</label>
-                        <label for='portfolio__carousel-2' class='portfolio__carousel-controller prev portfolio__carousel-controller-3'>&lt;</label>
-                        <label for='portfolio__carousel-1' class='portfolio__carousel-controller next portfolio__carousel-controller-3'>&gt;</label>
-
+                        <input class='portfolio__carousel-open' type='radio' id='carousel-1' name='carousel' aria-hidden='true' hidden='' checked='checked'>
+                        <div class='portfolio__carousel-item'>
+                            <img src='http://fakeimg.pl/2000x800/0079D8/fff/?text=Without'>
+                        </div>
+                        <input class='portfolio__carousel-open' type='radio' id='carousel-2' name='carousel' aria-hidden='true' hidden=''>
+                        <div class='portfolio__carousel-item'>
+                            <img src='http://fakeimg.pl/2000x800/DA5930/fff/?text=JavaScript'>
+                        </div>
+                        <input class='portfolio__carousel-open' type='radio' id='carousel-3' name='carousel' aria-hidden='true' hidden=''>
+                        <div class='portfolio__carousel-item'>
+                            <img src='http://fakeimg.pl/2000x800/F90/fff/?text=Carousel'>
+                        </div>
+                        <label for='carousel-3' class='portfolio__carousel-control prev control-1'>‹</label>
+                        <label for='carousel-2' class='portfolio__carousel-control next control-1'>›</label>
+                        <label for='carousel-1' class='portfolio__carousel-control prev control-2'>‹</label>
+                        <label for='carousel-3' class='portfolio__carousel-control next control-2'>›</label>
+                        <label for='carousel-2' class='portfolio__carousel-control prev control-3'>‹</label>
+                        <label for='carousel-1' class='portfolio__carousel-control next control-3'>›</label>
                         <ol class='portfolio__carousel-indicators'>
-                            <li><label for='portfolio__carousel-1' class='portfolio__carousel-indicators-bullet'>&bull;</label></li>
-                            <li><label for='portfolio__carousel-2' class='portfolio__carousel-indicators-bullet'>&bull;</label></li>
-                            <li><label for='portfolio__carousel-3' class='portfolio__carousel-indicators-bullet'>&bull;</label></li>
+                            <li>
+                                <label for='carousel-1' class='carousel-bullet'>•</label>
+                            </li>
+                            <li>
+                                <label for='carousel-2' class='carousel-bullet'>•</label>
+                            </li>
+                            <li>
+                                <label for='carousel-3' class='carousel-bullet'>•</label>
+                            </li>
                         </ol>
                     </div>
                 </div>
-            </section>
+        </section>
 
             <section class='blog'>
                 <a id='blog'></a>
