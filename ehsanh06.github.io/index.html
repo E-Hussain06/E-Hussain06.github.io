@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+    <head>
+        <meta charset='UTF-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link href='./dist/css/style.min.css' rel='stylesheet' type='text/css'>
+        <title>Ehsan Hussain</title>
+    </head>
+
+    <body>
+        <header>
+            <div class='masthead-container'>
+                <a href='#'>
+                    <h1 id='masthead__title'>Ehsan Hussain</h1>
+                </a>
+            </div>
+            <nav>
+                <ul class='nav__menu'>
+                    <li class='nav__list-item'>
+                        <a href='#profile'>Profile</a>
+                    </li>
+                    <li class='nav__list-item'>
+                        <a href='#about'>About</a>
+                    </li>
+                    <li class='nav__list-item'>
+                        <a href='#portfolio'>Portfolio</a>
+                    </li>
+                    <li class='nav__list-item'>
+                        <a href='#blog'>Blog</a>
+                    </li>
+                    <li class='nav__list-item'>
+                        <a href='#contact'>Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class='profile'>
+            <a id='profile-anchor'></a>
+            <div class='profile__content-container'>
+                <h1 class='profile__title'>Front-end Development</h1>
+                <ul class='profile__list'>
+                    <li class='profile__list-item'>HTML5</li>
+                    <li class='profile__list-item'>CSS3</li>
+                    <li class='profile__list-item'>JavaScript</li>
+                    <li class='profile__list-item'>Angular JS</li>
+                    <li class='profile__list-item'>Node JS</li>
+                </ul>
+                <div class='profile__button-container'>
+                    <a href='#portfolio' id='profile__button-text'>
+                        <span>View Portfolio</span>
+                        <i id='profile__button-glyph'>&#x25BC;</i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class='about'>
+            <a id='about'></a>
+            <div class='about__content-container-col-1'>
+                <h2 class='about__content-title'>About</h2>
+                <p class='about__content-text'>
+                    I'm Ehsan Hussain, a JavaScript developer based in Luton. I like building websites using JavaScript libraries and languages.
+                    On the side, I like playing retro-games, and playing music on my guitar and drums.
+                </p>
+            </div>
+            <div class='about__content-container-col-2'>
+                <h2 class='about__title'>Current Status</h2>
+                <p class='about__content-text'>
+                    As of 25th Nov 2016, I left a Network role to persue developing websites. Here's what I've been getting upto in the meantime:
+                </p>
+                <ul class='about__list'>
+                    <li class='about__list-item'>
+                        Looking for any available work - contract or permanent.
+                    </li>
+                    <li class='about__list-item'>
+                        Honing my skills in front-end and back-end languages.
+                    </li>
+                    <li class='about__list-item'>
+                        Building new understanding of new coding practices and concepts.
+                    </li>
+                    <li class='about__list-item'>
+                        Maintaining my edge in music - working on rudiments and developing harmonic riffs.
+                    </li>
+                    <li class='about__list-item'>
+                        Defending Gotham from the forces of evil.
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <main class='portfolio'>
+            <a id='portfolio'></a>
+            <h2 id='portfolio__title'>Portfolio</h2>
+            <p id='portfolio__content-text'>Below is a show-case of what I've worked on:</p>
+
+            <div class='portfolio__carousel'>
+                <div class='portfolio__carousel-inner'>
+                    <input class='portfolio__carousel-open' type='radio' id='carousel-1' name='carousel' aria-hidden='true' hidden='' checked='checked'>
+                    <div class='portfolio__carousel-item'>
+                        <img src='http://fakeimg.pl/2000x800/0079D8/fff/?text=Without' alt='carousel__picture1-carousel'>
+                    </div>
+                    <input class='portfolio__carousel-open' type='radio' id='carousel-2' name='carousel' aria-hidden='true' hidden=''>
+                    <div class='portfolio__carousel-item'>
+                        <img src='http://fakeimg.pl/2000x800/DA5930/fff/?text=JavaScript' alt='carousel__picture2-without'>
+                    </div>
+                    <input class='portfolio__carousel-open' type='radio' id='carousel-3' name='carousel' aria-hidden='true' hidden=''>
+                    <div class='portfolio__carousel-item'>
+                        <img src='http://fakeimg.pl/2000x800/F90/fff/?text=Carousel' alt='carousel__picture3-javascript'>
+                    </div>
+                    <label for='carousel-3' class='portfolio__carousel-control prev control-1'>‹</label>
+                    <label for='carousel-2' class='portfolio__carousel-control next control-1'>›</label>
+                    <label for='carousel-1' class='portfolio__carousel-control prev control-2'>‹</label>
+                    <label for='carousel-3' class='portfolio__carousel-control next control-2'>›</label>
+                    <label for='carousel-2' class='portfolio__carousel-control prev control-3'>‹</label>
+                    <label for='carousel-1' class='portfolio__carousel-control next control-3'>›</label>
+                    <ol class='portfolio__carousel-indicators'>
+                        <li>
+                            <label for='carousel-1' class='carousel-bullet'>•</label>
+                        </li>
+                        <li>
+                            <label for='carousel-2' class='carousel-bullet'>•</label>
+                        </li>
+                        <li>
+                            <label for='carousel-3' class='carousel-bullet'>•</label>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </main>
+
+        <section class='social'>
+            <div class='blog'>
+                <a id='blog'></a>
+                <h2 class='blog__title'>Blog</h2>
+                <h3 class='blog__subtitle'>Articles</h3>
+                <p class='blog__content'>Coming soon, watch this space!</p>
+            </div>
+
+            <div class='contact'>
+                <a id='contact'></a>
+                <h2 class='contact__title'>Contact</h2>
+                <p>
+                    You can find me on <span id='contact__span-twitter'><a href='https://twitter.com/EhsanH06'>Twitter</a></span>,
+                    <span id='contact__span-linked'><a href='https://uk.linkedin.com/in/ehsan-hussain-7926bb121'>LinkedIn</a></span>,
+                    and <span id='contact__span-github'><a href='https://github.com/ehsanh06'>GitHub</a></span>!
+                </p>
+            </div>
+        </section>
+
+
+        <footer>
+            <ul class='footer-nav__menu'>
+                <li class='footer-nav__list-item'>
+                    &copy;2016 Ehsan Hussain
+                </li>
+                <li class='footer-nav__list-item'>
+                    <a href='https://twitter.com/EhsanH06'>Twitter</a>
+                </li>
+                <li class='footer-nav__list-item'>
+                    <a href='https://uk.linkedin.com/in/ehsan-hussain-7926bb121'>LinkedIn</a>
+                </li>
+                <li class='footer-nav__list-item'>
+                    <a href='https://github.com/ehsanh06'>GitHub</a>
+                </li>
+            </ul>
+        </footer>
+    </body>
+
+</html>
