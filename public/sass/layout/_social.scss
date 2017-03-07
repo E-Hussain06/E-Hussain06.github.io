@@ -1,0 +1,53 @@
+section#social {
+    background: rgb(13, 106, 224);
+
+    > div {
+        background: rgba(8, 150, 206, 1);
+        content: "";
+        display: table;
+        clear: both;
+        width: 65%;
+        margin: 0 auto;
+        padding: 2em 0;
+
+        
+        div:first-child {
+            float: left;
+            width: 15em;
+            position: relative;
+            left: 3em;
+            padding: 1em;
+
+            h2 {
+                margin-bottom: 1em;
+            }
+            p {
+                font-size: 1em;
+                line-height: 1.1em;
+            }
+        }
+        div:last-child {
+            float: right;
+            width: 25em;
+            padding: 1em;
+            position: relative;
+            right: -1em;
+
+            h2 {
+                margin-bottom: 1em;
+            }
+            p {
+                font-size: 1em;
+                line-height: 1.1em;
+
+                span {
+                    a {
+                        &:hover {
+                            color: #bbb;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

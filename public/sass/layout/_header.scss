@@ -1,0 +1,44 @@
+header {
+    overflow: hidden;
+    margin-bottom: 20em;
+    background: #2098d1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    div {
+        border: none;
+        width: 15em;
+        float: left;
+        padding: 1em;
+        margin-left: 2em;
+
+        a {
+            text-decoration: none;
+        }        
+    }
+    nav {
+        float: right;
+        margin-right: 5em;
+
+        ul {
+            padding: 0.5em;
+            text-align: center;
+
+            li {
+                float: left;
+                padding: 1em;
+                text-transform: uppercase;
+
+                a {
+                    padding-bottom:1em;
+                    &:hover {
+                        border-bottom: 2px solid #045f8c;
+                    }
+                }
+            }
+        }
+    }
+}
