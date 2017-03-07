@@ -1,0 +1,15 @@
+{
+  "name": "ehsanh06.github.io",
+  "version": "1.0.0",
+  "description": "Ehsan Hussain's Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ehsan Hussain",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}
