@@ -1,0 +1,95 @@
+footer {
+    padding: 2em;
+
+    > .container {
+        @include size(100%);
+
+        > .row {
+            .first {
+                position: relative;
+                top: 2em;
+
+                .avatar {
+                    @include size(35%);
+                    float: left;
+                    
+                    img {
+                        @include size(80%);
+                        border: 1px solid $highlight;
+                    }
+                }
+            }
+            .second {
+                > ul {
+                   > li {
+                        padding: 0.5em;
+
+                       > a {
+                            display: block;
+
+                            #twitter-sprite,
+                            #github-sprite,
+                            #linked-sprite {
+                                height: 40px;
+                                width: 40px;
+                                background: url('../../dist/img/glyphicon-sprites.png') no-repeat left top;
+                                background-size: 25em;
+                                z-index: 5;
+                                float: left;
+                                margin: 1em;
+                               
+                            }
+                            #twitter-sprite {
+                                background-position: -305px -255px;
+                            }
+                            #github-sprite {
+                                background-position: -255px -50px;
+                            }
+                            #linked-sprite {
+                                background-position: -5px -155px;
+                            }
+                        }
+                        > p {
+                            a {
+                                span {
+                                    font-weight: $font-weight-heavy;
+                                }
+                                &:hover {
+                                    color: $highlight;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .third {
+                ul {
+                    @include size(65%);
+
+                    li {
+                        padding: 1em 0;
+                        text-transform: uppercase;
+
+                        a {
+                            &:hover {
+                                color: $highlight;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .license {
+        @include size(50%);
+        margin-top: 2em;
+
+        small {
+            a {
+                &:hover {
+                    color: $highlight;
+                }
+            }
+        }
+    }
+}
