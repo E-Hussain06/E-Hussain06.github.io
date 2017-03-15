@@ -11,35 +11,40 @@
 
     <body>
         <header>
-            <div>
-                <a href='#'>
-                    <h1>Ehsan Hussain</h1>
-                </a>
+            <div class='container'>
+                <div class='row'>
+                    <div class='col-4'>
+                        <a href='#'>
+                            <h1>Ehsan Hussain</h1>
+                        </a>
+                    </div>
+                    <nav class='col-7-sm'>
+                        <ul>
+                            <li>
+                                <a href='#'>Profile</a>
+                            </li>
+                            <li>
+                                <a href='#'>About</a>
+                            </li>
+                            <li>
+                                <a href='#'>Portfolio</a>
+                            </li>
+                            <li>
+                                <a href='#'>Blog</a>
+                            </li>
+                            <li>
+                                <a href='#'>Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
             </div>
-            <nav>
-                <ul>
-                    <li>
-                        <a href='#'>Profile</a>
-                    </li>
-                    <li>
-                        <a href='#'>About</a>
-                    </li>
-                    <li>
-                        <a href='#'>Portfolio</a>
-                    </li>
-                    <li>
-                        <a href='#'>Blog</a>
-                    </li>
-                    <li>
-                        <a href='#'>Contact</a>
-                    </li>
-                </ul>
-            </nav>
         </header>
 
         <section id='profile'>
-            <div>
-                <h1>Front-end Development</h1>
+            <div class='container'>
+                <h1>Front-End Development</h1>
                 <ul>
                     <li>HTML5</li>
                     <li>CSS3</li>
@@ -47,7 +52,7 @@
                     <li>Angular JS</li>
                     <li>Node JS</li>
                 </ul>
-                <div>
+                <div class='button__container'>
                     <a href='#'>
                         <span>View Portfolio</span>
                         <i id='profile__button-glyph'>&#x25BC;</i>
@@ -57,58 +62,62 @@
         </section>
 
         <section id='about'>
-            <div>
-                <h2>About</h2>
-                <p>
-                    I'm Ehsan Hussain, a JavaScript developer based in Luton. I like building websites using JavaScript libraries and languages.
-                    On the side, I like playing retro-games, and playing music on my guitar and drums.
-                </p>
-            </div>
-            <div>
-                <h2>Current Status</h2>
-                <p>
-                    As of 25th Nov 2016, I left a Network role to persue developing websites. Here's what I've been getting upto in the meantime:
-                </p>
-                <ul>
-                    <li>
-                        Looking for any available work - contract or permanent.
-                    </li>
-                    <li>
-                        Honing my skills in front-end and back-end languages.
-                    </li>
-                    <li>
-                        Building new understanding of new coding practices and concepts.
-                    </li>
-                    <li>
-                        Maintaining my edge in music - working on rudiments and developing harmonic riffs.
-                    </li>
-                    <li>
-                        Defending Gotham from the forces of evil.
-                    </li>
-                </ul>
+            <div class='container'>
+                <div class='row'>
+                    <div class='col-12'>
+                        <h2>About</h2>
+                        <p>
+                            I'm Ehsan Hussain, a JavaScript developer based in Luton. I like building websites using JavaScript libraries and languages.
+                            On the side, I like playing retro-games, and playing music on my guitar and drums.
+                        </p>
+                    </div>
+                    <div class='col-12'>
+                        <h2>Current Status</h2>
+                        <p>
+                            As of 25th Nov 2016, I left a Network role to persue developing websites. Here's what I've been getting upto in the meantime:
+                        </p>
+                        <ul>
+                            <li>
+                                Looking for any available work - contract or permanent.
+                            </li>
+                            <li>
+                                Honing my skills in front-end and back-end languages.
+                            </li>
+                            <li>
+                                Building new understanding of new coding practices and concepts.
+                            </li>
+                            <li>
+                                Maintaining my edge in music - working on rudiments and developing harmonic riffs.
+                            </li>
+                            <li>
+                                Defending Gotham from the forces of evil.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section>
-            <div>
+        <section id='portfolio'>
+            <div id='portfolio__title-container'>
                 <h2>Portfolio</h2>
                 <p>Below is a show-case of what I've worked on:</p>
             </div>
         </section>
-        <main id='portfolio'>
+        <main>
             <div class='portfolio__carousel'>
                 <div class='portfolio__carousel-inner'>
                     <input class='portfolio__carousel-open' type='radio' id='carousel-1' name='carousel' aria-hidden='true' hidden='' checked='checked'>
                     <div class='portfolio__carousel-item'>
-                        <img src='./public/img/carousel_picture1.jpg' alt='carousel__picture1-carousel'>
+                        <img src='./dist/img/carousel_picture1.jpg' alt='carousel__picture1-carousel'>
                     </div>
                     <input class='portfolio__carousel-open' type='radio' id='carousel-2' name='carousel' aria-hidden='true' hidden=''>
                     <div class='portfolio__carousel-item'>
-                        <img src='./public/img/carousel_picture2.jpg' alt='carousel__picture2-without'>
+                        <img src='./dist/img/carousel_picture2.jpg' alt='carousel__picture2-without'>
                     </div>
                     <input class='portfolio__carousel-open' type='radio' id='carousel-3' name='carousel' aria-hidden='true' hidden=''>
                     <div class='portfolio__carousel-item'>
-                        <img src='./public/img/carousel_picture3.jpg' alt='carousel__picture3-javascript'>
+                        <img src='./dist/img/carousel_picture3.jpg' alt='carousel__picture3-javascript'>
                     </div>
                     <label for='carousel-3' class='portfolio__carousel-control prev control-1'>‹</label>
                     <label for='carousel-2' class='portfolio__carousel-control next control-1'>›</label>
@@ -132,52 +141,90 @@
         </main>
 
         <section id='social'>
-            <div>
-                <div>
-                    <h2>Blog</h2>
-                    <p>Coming soon, watch this space!</p>
-                </div>
+            <div class='container'>
+                <div class='row'>
+                    <div class='col-6'>
+                        <h2>Blog</h2>
+                        <p>Coming soon, watch this space!</p>
+                    </div>
 
-                <div>
-                    <h2>Contact</h2>
-                    <p>
-                        You can find me on <span><a href='https://twitter.com/EhsanH06'>Twitter</a></span>,
-                        <span><a href='https://www.linkedin.com/in/ehsanh06/'>LinkedIn</a></span>, and <span><a href='https://github.com/ehsanh06'>GitHub</a></span>!
-                    </p>
+                    <div class='col-6'>
+                        <h2>Contact</h2>
+                        <p>
+                            You can find me on <span><a href='https://twitter.com/EhsanH06'>Twitter</a></span>,
+                            <span><a href='https://www.linkedin.com/in/ehsanh06/'>LinkedIn</a></span>, and <span><a href='https://github.com/ehsanh06'>GitHub</a></span>!
+                        </p>
+                    </div>
                 </div>
             </div>
+
         </section>
 
         <footer>
-            <div>
-                <ul>
-                    <li><a href='https://twitter.com/EhsanH06'><span id='twitter-sprite'></span></a></li>
-                    <li><a href='https://www.linkedin.com/in/ehsanh06/'><span id='linked-sprite'></span></a></li>
-                    <li><a href='https://github.com/ehsanh06'><span id='github-sprite'></span></a></li>
-                </ul>
+            <div class='container'>
+                <div class='row'>
+                    <div class='col-4 first'>
+                        <div class='avatar'>
+                            <img src='./dist/img/avatar.jpg' alt='Bio Avatar' id='avatar' />
+                        </div>
+                        <div class='bio'>
+                            <p class='bio__text'>
+                                Front-End Developer that mainly focuses on JavaScript. Ehsan is self-taught, having experience in front-end languages to
+                                produce high-quality websites and exceptional user experience.
+                            </p>
+                        </div>
+                    </div>
+                    <div class='col-5 second'>
+                        <ul>
+                            <li>
+                                <a href='https://twitter.com/EhsanH06'>
+                                    <span id='twitter-sprite'></span>
+                                </a>
+                                <p>
+                                    Follow <a href='https://twitter.com/EhsanH06'><span id='twitter-user'>@ehsanh06</span></a>                                    for web development articles, opinions, and links.
+                                </p>
+                            </li>
+                            <li>
+                                <a href='https://www.linkedin.com/in/ehsanh06/'>
+                                    <span id='linked-sprite'></span>
+                                </a>
+                                <p>
+                                    View <a href='https://www.linkedin.com/in/ehsanh06/'><span id='github-user'>ehsanh06</span></a>                                    on GitHub for open-source projects and various other source-code.
+                                </p>
+                            </li>
+                            <li>
+                                <a href='https://github.com/ehsanh06'>
+                                    <span id='github-sprite'></span>
+                                </a>
+                                <p>
+                                    If you'd like to get in touch, visit my <a href='https://github.com/ehsanh06'><span id='linked-user'>LinkedIn profile</span></a>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <nav class='col-2 third'>
+                        <ul>
+                            <li>
+                                <a href='#'>Profile</a>
+                            </li>
+                            <li>
+                                <a href='#'>About</a>
+                            </li>
+                            <li>
+                                <a href='#'>Portfolio</a>
+                            </li>
+                            <li>
+                                <a href='#'>Blog</a>
+                            </li>
+                            <li>
+                                <a href='#'>Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-            <div>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href='#'>Profile</a>
-                        </li>
-                        <li>
-                            <a href='#'>About</a>
-                        </li>
-                        <li>
-                            <a href='#'>Portfolio</a>
-                        </li>
-                        <li>
-                            <a href='#'>Blog</a>
-                        </li>
-                        <li>
-                            <a href='#'>Contact</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div>
+            <div class='license'>
                 <small>
                     Unless otherwise stated, content is copyrighted &copy; 2017
                     <a href='#'>Ehsan Hussain</a> and code samples are 
