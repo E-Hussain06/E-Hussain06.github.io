@@ -3,6 +3,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var rename = require('gulp-rename');
+var utils = require('./utils');
 
 var paths = {
     css: {
@@ -10,7 +11,7 @@ var paths = {
         file: 'style.min.css'
     },
     sass: {
-        dir: './public/sass/',
+        dir: './src/sass/',
         file: 'style.scss'
     }
 }
@@ -24,6 +25,14 @@ gulp.task('sass', function () {
 });
 
 gulp.task('watch:sass', function () {
-    var wildcard = './public/sass/**/*.scss';
-    gulp.watch(wildcard, ['sass']);
+    gulp.watch('./src/sass/**/*.scss', ['sass']);
+    console.log('Watching for changes...');
+});
+
+gulp.task('build', function() {
+    utils();
+});
+
+gulp.task('default', ['sass', 'watch:sass'], function() {
+    console.log('Defaut tasks');
 });
