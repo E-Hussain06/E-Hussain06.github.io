@@ -13,8 +13,12 @@ var paths = {
     sass: {
         dir: './src/sass/',
         file: 'style.scss'
+    },
+    img: {
+        src: './src/img/',
+        dest: './dist/img/'
     }
-}
+};
 
 gulp.task('sass', function () {
     // Gets all files ending with .scss
@@ -30,7 +34,7 @@ gulp.task('watch:sass', function () {
 });
 
 gulp.task('build', function() {
-    utils();
+    utils(paths.img.src, paths.img.dest);
 });
 
 gulp.task('default', ['sass', 'watch:sass'], function() {
