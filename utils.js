@@ -1,29 +1,32 @@
 'use strict';
 
 var fs = require('fs');
-var paths = {
-    srcDir: './src/img',
-    destDir: './dist/img'
-};
 
-function copyFile(src, dest) {
-    var data = fs.readFileSync(src);
+module.exports = function move(src, dest, callback) {
 
-    fs.writeFile(dest, data, function (err) {
-        if (err) return err;
+    fs.rename(src, dest, function (err) {
+        if (err) {
+            if (err.code === 'EXDEV') {
+                copy();
+            } else { 
+                callback(err);
+            }
+            return;
+        }
+        callback();
     });
-}
 
-function copyContentsFromDirectory(src, dest) {
-    var files = fs.readdirSync(src);
-    files.forEach(function (file) {
-        copyFile(path.resolve(src + '/' +file), path.resolve(dest + '/' + file));
-    });
-}
+    function copy() {
+        var read = fs.createReadStream(src);
+        var write = fs.createWriteStream(dest);
 
-function moveImg() {
-    copyFile(paths.srcDir, paths.destDir);
-    copyContentsFromDirectory(paths.srcDir, paths.destDir);
+        read.on('error', callback);
+        write.on('error', callback);
+
+        read.on('close', function () {
+            fs.unlink(src, callback);
+        });
+
+        read.pipe(write);
+    }
 };
-
-module.exports = moveImg();
