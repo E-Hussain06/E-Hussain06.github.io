@@ -1,0 +1,38 @@
+{
+    "author": "Statgen Bot",
+    "name": "Ehsan Hussain",
+    "description": {
+        "short": "I'm Ehsan Hussain, I create Front-End Web Apps.",
+        "long": "I'm a freelance front-end developer based in Luton, England. I'm currently looking for new front-end opportunities."
+    },
+    "links": [
+        {
+            "name": "Twitter",
+            "url": "http://twitter.com/ehsanh06"
+        },
+        {
+            "name": "GitHub",
+            "url": "http://github.com/ehsanh06"
+        },
+        {
+            "name": "LinkedIn",
+            "url": "http://linkedin.com/in/ehsanh06"
+        }
+    ],
+    "archive": {
+        "name": "blog",
+        "navOrder": 4
+    },
+    "showHomeInNavigation": true,
+    "recentPostLimit": 5,
+    "currentMenuClass": "current",
+    "paths": {
+        "pages": "_pages",
+        "posts": "_posts",
+        "layouts": "_layouts",
+        "includes": "_includes",
+        "site": "",
+        "styles": "_assets/scss/styles.scss",
+        "images": "_assets/img"
+    }
+}
