@@ -1,0 +1,13 @@
+{{> header }}     
+<main>
+    <h1>{{ pageData.heading }}</h1>
+    {{{ pageData.post.content }}}
+    <p class="small">Posted on {{ pageData.post.niceDate }}. 
+        Tagged in 
+        {{# pageData.post.tags }}
+            <a href="/tag/{{ this }}/">{{ this }}</a> 
+        {{/pageData.post.tags }}
+    </p>
+    {{> recent }}
+</main>
+{{> footer }}
