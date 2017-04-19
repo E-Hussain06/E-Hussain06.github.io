@@ -22,8 +22,8 @@ Beyond my love for tech and gaming, I do balance it out with some strength train
 
 ## Get in Touch
 
-Feel free to get in touch at, [ehsanhussain991@gmail.com](mailto:ehsanhussain991@gmail.com).
+Want to come and slay dragons with me? Then contact me on, [ehsanhussain991@gmail.com](mailto:ehsanhussain991@gmail.com) and we can venture off! Otherwise you can just tell me about some job opportunities...
 
-You may also view my work on my [GitHub](https://github.com/ehsanh06).
+Curious of how my source code looks? Visit my [GitHub](https://github.com/ehsanh06) for all the source code I've  worked on.
 
-If you can't get enough of me then feel free to check out my [LinkedIn](https://www.linkedin.com/in/ehsanh06)
+Do you have some business for me? Feel free to check out my [LinkedIn](https://www.linkedin.com/in/ehsanh06).
