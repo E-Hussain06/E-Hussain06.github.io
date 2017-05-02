@@ -40,7 +40,6 @@ ul, ol {
 a {
     color: $link-color;
     text-decoration: none;
-    border-bottom: 1px solid currentColor;
     &:hover {
         opacity: 0.6;
     }
