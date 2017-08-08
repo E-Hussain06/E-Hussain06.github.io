@@ -12,8 +12,6 @@ title: "About"
 My name is Ehsan Hussain, I'm a freelance Front-End developer. This is where I'll be sharing some of my tips,
 thoughts and opinions on my **developing** and **life** journeys.
 
-<img src='../_assets/img/avatar.jpg' alt='Avatar' style='width:20%; border-radius:100%; float:left; margin:1em 2em;'>
-
 I've been programming for a while, mainly in web. I've been focussed mostly on JavaScript and web app development, using NodeJS, Angular2 and MongoDB. With a great cup of black coffee and Motorhead blasting in my Headphones, I'm all set for programming.
 
 Besides my love for development I also am a huge table-top and video gamer - If I'm not coding I'm either slaying Chromium Dragons in a session of D&D or I'm hunting a handful of Zinogre's in a session of Monster Hunter.
