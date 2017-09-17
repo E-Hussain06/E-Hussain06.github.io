@@ -6,8 +6,6 @@ tags: [programming]
 title: "You don't need a framework"
 ---
 
-# You don't need a Framework
-
 Responsive web design is one of those approaches to creating websites which layout basically adapts to fit the device's viewport/screen resolution - despite if it's a tablet, phone, desktop, or even a TV!
 
 Sounds a bit scary - Good thing we have CSS/JavaScript and even HTML frameworks, e.g. Bootstrap, Foundation, KendoUI, to figure all this out for us. Well maybe...
